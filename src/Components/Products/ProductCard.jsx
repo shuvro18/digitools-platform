@@ -3,15 +3,26 @@ import { FaDollarSign } from 'react-icons/fa';
 import { IoMdCheckmark } from 'react-icons/io';
 import { toast } from 'react-toastify';
 
-const ProductCard = ({ data }) => {
+const ProductCard = ({ data, selectCart, setSelectCart }) => {
 
     const [select, setSelect] = useState(false)
-    const handleSelected = ()=>{
+    const handleSelected = () => {
         setSelect(true)
-        toast.success(`you select ${data.tag} packge `)
+        
+
+        const findMach = selectCart.find(element => element.name === data.name);
+        console.log(findMach)
+
+        if (findMach) {
+            toast.error('You have already selected it ')
+        } else {
+            setSelectCart([...selectCart, data])
+            toast.success(`you select ${data.tag} packge `)
+        }
+
     }
 
-    console.log(data.features)
+
     return (
         <div>
             <div className="card bg-base-100 shadow-sm">
@@ -46,7 +57,7 @@ const ProductCard = ({ data }) => {
 
                     </ul>
                     <div className="mt-6">
-                        <button onClick={handleSelected} className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn w-full rounded-3xl text-white">{ select ? "You chose it" : "Buy Now"}</button>
+                        <button onClick={handleSelected} className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn w-full rounded-3xl text-white">{select ? "You chose it" : "Buy Now"}</button>
                     </div>
                 </div>
             </div>
