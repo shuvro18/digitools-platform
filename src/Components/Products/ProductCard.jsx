@@ -1,44 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaDollarSign } from 'react-icons/fa';
+import { IoMdCheckmark } from 'react-icons/io';
+import { toast } from 'react-toastify';
 
 const ProductCard = ({ data }) => {
-    console.log(data)
+
+    const [select, setSelect] = useState(false)
+    const handleSelected = ()=>{
+        setSelect(true)
+        toast.success(`you select ${data.tag} packge `)
+    }
+
+    console.log(data.features)
     return (
         <div>
             <div className="card bg-base-100 shadow-sm">
                 <div className="card-body">
-                    <span className={`badge badge-xs ${data.tag === "Best Seller" ? "badge-warning" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`}>{data.tag}</span>
-                    <div className="flex justify-between">
-                        <h2 className="text-3xl font-bold">Premium</h2>
-                        <span className="text-xl">$29/mo</span>
+                    <div className='flex justify-between'>
+                        <div className={`badge badge-xs ${data.tag === "Best Seller" ? "badge-warning" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`}>{data.tag}
+
+                        </div>
+                        <img className='pb-6' src={data.icon} alt="" />
                     </div>
+
+                    <div className="flex justify-between">
+                        <h2 className="text-3xl font-bold">{data.name}</h2>
+
+                    </div>
+                    <div>
+                        {data.description}
+                    </div>
+
+                    <div>
+                        <span className="text-xl flex items-center"> <FaDollarSign /> {data.price} / <p className='text-neutral/50 text-sm'>{data.period}</p></span>
+                    </div>
+
+
                     <ul className="mt-6 flex flex-col gap-2 text-xs">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>High-resolution image generation</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Customizable style templates</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Batch processing capabilities</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>AI-driven image enhancements</span>
-                        </li>
-                        <li className="opacity-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span className="line-through">Seamless cloud integration</span>
-                        </li>
-                        <li className="opacity-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span className="line-through">Real-time collaboration tools</span>
-                        </li>
+
+                        {
+                            data.features.map((element, index) => <li className='flex items-center gap-2 ' key={index}> <IoMdCheckmark className='text-primary' />
+                                {element}</li>)
+                        }
+
+
                     </ul>
                     <div className="mt-6">
-                        <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn w-full rounded-3xl ">Buy Now</button>
+                        <button onClick={handleSelected} className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn w-full rounded-3xl text-white">{ select ? "You chose it" : "Buy Now"}</button>
                     </div>
                 </div>
             </div>

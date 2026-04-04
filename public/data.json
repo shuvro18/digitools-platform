@@ -12,7 +12,7 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "icon": "ai-writing"
+    "icon": "https://i.ibb.co.com/zhZ1fFMr/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "icon": "design-templates"
+    "icon": "https://i.ibb.co.com/chMLkV0M/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Commercial use",
       "No attribution"
     ],
-    "icon": "stock-assets"
+    "icon": "https://i.ibb.co.com/Z64NYCFM/portfolio.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "API access",
       "Custom workflows"
     ],
-    "icon": "automation"
+    "icon": "https://i.ibb.co.com/gMDh6P0G/operation.png"
   },
   {
     "id": 5,
@@ -72,11 +72,11 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "resume"
+    "icon": "https://i.ibb.co.com/Z64NYCFM/portfolio.png"
   },
   {
     "id": 6,
-    "name": "Social Media Content Kit",
+    "name": "Social Media Content",
     "description": "Complete toolkit for creating engaging social media content across all platforms.",
     "price": 39,
     "period": "monthly",
@@ -87,7 +87,13 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "icon": "social-media"
+    "icon": "https://i.ibb.co.com/mCQQwhzL/social-media.png"
   }
   
 ]
+
+
+
+
+
+

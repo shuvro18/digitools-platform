@@ -14,7 +14,7 @@ const ProductsSection = ({ fetchData }) => {
             </div>
 
 
-            <div className={`${productsCartButton ? "grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 rounded-2xl shadow-7xl mt-10" : " "}`} >
+            <div className={`${productsCartButton ? "grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-full gap-10 rounded-2xl shadow-7xl mt-10" : " "}`} >
                 { productsCartButton ?
                     res.map(data => <ProductCard data={data} key={data.id}></ProductCard>)
                     : "hello"
