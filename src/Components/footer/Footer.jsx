@@ -59,7 +59,23 @@ const Footer = () => {
                     </div>
                 </nav>
             </footer>
-             <div className="divider divider-info w-10/12 mx-auto"></div>
+            <div className="divider divider-info w-10/12 mx-auto"></div>
+
+            <div className='w-10/12 mx-auto flex justify-between items-center'>
+
+
+                <div className='text-white text-sm'>
+                    <p>© 2026 Digitools. All rights reserved.</p>
+                </div>
+
+                <div className='text-white text-sm flex justify-between items-center gap-2'>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Cookies</p>
+                </div>
+
+
+            </div>
         </div>
     );
 };
