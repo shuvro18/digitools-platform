@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify'
 import NavBar from './Components/Navbar/NavBar'
 import GetStarted from './Components/getStarted/GetStarted'
 import Pricing from './Components/SimplePricing/Pricing'
+import TransForm from './Components/TransFormSection/TransForm'
 
 
 
@@ -28,6 +29,7 @@ function App() {
 
       <GetStarted></GetStarted>
       <Pricing></Pricing>
+      <TransForm></TransForm>
 
 
 
