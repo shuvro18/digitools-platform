@@ -11,7 +11,7 @@ const ProductCard = ({ data, selectCart, setSelectCart }) => {
         
 
         const findMach = selectCart.find(element => element.name === data.name);
-        console.log(findMach)
+        
 
         if (findMach) {
             toast.error('You have already selected it ')

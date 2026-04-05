@@ -5,6 +5,8 @@ import Rating from './Components/Rating/Rating'
 import ProductsSection from './Components/DataFetch/ProductsSection'
 import { ToastContainer } from 'react-toastify'
 import NavBar from './Components/Navbar/NavBar'
+import GetStarted from './Components/getStarted/GetStarted'
+import Pricing from './Components/SimplePricing/Pricing'
 
 
 
@@ -23,6 +25,9 @@ function App() {
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>} >
         <ProductsSection selectCart={selectCart} setSelectCart={setSelectCart} fetchData={fetchData}></ProductsSection>
       </Suspense>
+
+      <GetStarted></GetStarted>
+      <Pricing></Pricing>
 
 
 

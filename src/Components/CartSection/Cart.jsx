@@ -7,11 +7,11 @@ import { toast } from 'react-toastify';
 
 const Cart = ({ selectCart, setSelectCart }) => {
 
-    const totalPrices = selectCart.reduce((sum, item) =>{
-        return(sum + item.price)
+    const totalPrices = selectCart.reduce((sum, item) => {
+        return (sum + item.price)
     }, 0)
 
-    const removeFromCart = ()=>{
+    const removeFromCart = () => {
         setSelectCart([])
         toast.error("You remove all")
     }

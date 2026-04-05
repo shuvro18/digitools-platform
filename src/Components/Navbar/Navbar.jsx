@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({selectCart}) => {
+const Navbar = ({ selectCart }) => {
     return (
         <div className='shadow-sm'>
             <div className="navbar bg-base-100 w-10/12 mx-auto">
@@ -8,8 +8,8 @@ const Navbar = ({selectCart}) => {
 
                     <a className="btn btn-ghost text-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold ">DigiTools</a>
                 </div>
-                <div className="navbar-center lg:flex ">
-                    <ul className="menu menu-horizontal px-1">
+                <div className="navbar-center hidden md:flex lg:flex">
+                    <ul className="menu menu-horizontal px-1 ">
                         <li><a>Products</a></li>
                         <li><a>Features</a></li>
                         <li><a>Pricing</a></li>
