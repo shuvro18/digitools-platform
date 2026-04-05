@@ -8,6 +8,7 @@ import NavBar from './Components/Navbar/NavBar'
 import GetStarted from './Components/getStarted/GetStarted'
 import Pricing from './Components/SimplePricing/Pricing'
 import TransForm from './Components/TransFormSection/TransForm'
+import Footer from './Components/footer/Footer'
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <GetStarted></GetStarted>
       <Pricing></Pricing>
       <TransForm></TransForm>
+      <Footer></Footer>
 
 
 
