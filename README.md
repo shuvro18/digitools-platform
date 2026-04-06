@@ -1,16 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+github=shuvro18
 
-## Expanding the ESLint configuration
+link = https://github.com/shuvro18/cricket-team-by-anime-character
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
+Key Features
+🛒 Interactive Cart System: Users can select premium packages and manage them in a dedicated cart section.
+
+🔄 Dynamic State Management: Features a robust "Buy Now" logic that prevents duplicate selections and provides real-time feedback via toasts.
+
+📊 Real-time Price Calculation: Uses the JavaScript reduce method to automatically calculate the total cost of all items added to the cart.
+
+📱 Fully Responsive Design: Built with a mobile-first approach, ensuring a perfect layout across mobile, tablet, and desktop screens.
+
+⚡ Smart Navigation: Includes a toggle system to switch between the "Products" view and the "Cart" view without page reloads.
+
+🎨 Premium UI/UX: Styled with Tailwind CSS v4 and DaisyUI, featuring elegant gradients, glassmorphism effects, and professional typography.
+
+
+
+
+🚀 Technologies Used
+1.React.js: For building a component-based, reactive user interface.
+
+2.Tailwind CSS (v4): For advanced, utility-first styling and modern gradient implementations.
+
+3.DaisyUI: For accessible and highly customizable UI components like Navbars, Cards, and Badges.
+
+4.React Icons: Providing a rich set of visual indicators (e.g., Shopping Cart, Dollar signs, Checkmarks).
+
+5.React Toastify: For sleek, non-intrusive user notifications upon selecting or removing items.
+
+
+
+
+
+Local Setup Instructions
+Clone the repository:
+
+Bash
+git clone https://github.com/your-username/digitools.git
+Navigate to the project directory:
+
+Bash
+cd digitools
+Install dependencies:
+
+Bash
+npm install
+Launch the development server:
+
+Bash
+npm run dev
+
+
+
+
+
+
+
+#Technologies Used
+1.React.js: For building a component-based, reactive user interface.
+
+2.Tailwind CSS (v4): For advanced, utility-first styling and modern gradient implementations.
+
+3.DaisyUI: For accessible and highly customizable UI components like Navbars, Cards, and Badges.
+
+4.React Icons: Providing a rich set of visual indicators (e.g., Shopping Cart, Dollar signs, Checkmarks).
+
+5.React Toastify: For sleek, non-intrusive user notifications upon selecting or removing items.
+
+
